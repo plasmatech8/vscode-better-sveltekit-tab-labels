@@ -1,10 +1,18 @@
 # Better Sveltekit Tab Labels
 
-Changes the label on a editor tab in your VS Code editor
+A VS Code extension that cannot be completed unless the VS Code extensions API
+adds support for changing/overriding tab labels.
+
+(it would also help if the tabs API
+contains file information like the URI of the file)
+
+## Description
+
+Aims to change the editor tab label in your VS Code editor
 if the file is a route in your SvelteKit application.
 
-> ![Preview](img/rough_day_huh.jpg)
-> TODO: Preview image. Possibly animated Gif.
+> What it can potentially look like. (?)
+> ![Preview](img/preview.png)
 
 ## Features
 
@@ -51,5 +59,7 @@ TODO: Release something. Eventually. Maybe.
 > ### 1.0.0
 >
 > Initial release of the extension.
+> ![Preview](img/rough_day_huh.jpg)
+
 
 > TODO: See [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
