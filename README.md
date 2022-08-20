@@ -40,6 +40,12 @@ Emoji characters worth considering:
 * Layout 🖼️ 🌄 🌋 🗻 🏔 🏞 🏜
 * Module 🥛 🍾 🫙 🧑‍💻
 
+Template formats worth considering:
+* About Page Data
+* /app/about Page Data
+* /app/about 📄 📀
+*  📄 📀 /app/about
+
 ## Extension Settings
 
 This extension contributes the following settings:
