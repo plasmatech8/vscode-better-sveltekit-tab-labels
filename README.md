@@ -23,7 +23,7 @@ By default, the extension changes route files to the following format:
 | Layout                 | `/app/about/+layout.svelte`             | /app/about 🖼️     |
 | Layout Module          | `/app/about/+layout.js`                 | /app/about 🖼️ 🫙   |
 | Layout Module (server) | `/app/about/+layout.server.js`          | /app/about 🖼️ 🫙 ⚡ |
-| Server                 | `/api/users/+server.js` (or `.ts`       | /app/users ⚡     |
+| Server                 | `/api/users/+server.js` (or `.ts`       | /api/users ⚡     |
 
 Emoji characters worth considering:
 * Data 💽 💾 💿 📀 🏗 ⚙️ ⚙
