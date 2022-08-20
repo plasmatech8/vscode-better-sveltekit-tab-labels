@@ -3,9 +3,8 @@
 Changes the label on a editor tab in your VS Code editor
 if the file is a route in your SvelteKit application.
 
-![Preview](img/rough_day_huh.jpg)
-
-> TODO: Animated preview image
+> ![Preview](img/rough_day_huh.jpg)
+> TODO: Preview image. Possibly animated Gif.
 
 ## Features
 
