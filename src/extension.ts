@@ -21,8 +21,11 @@ export async function activate(context: vscode.ExtensionContext) {
   // Option 1: On tab opened, check file, then change tab label
   const changeTabs = vscode.window.tabGroups.onDidChangeTabs((tabChangeEvent) =>
     tabChangeEvent.opened.forEach((tab) => {
+      console.log(`(1 activated with tab label: ${tab.label})`);
       // console.log({ ...tab });
-      // Need: tab file URI - for checking whether the tab is a valid sveltekit route file
+      // tab.label = "asddsa"; // <- READONLY
+
+      // Need: tab file URI - so that I can check whether the tab is a valid sveltekit route file
       // Need: ability to override the tab label with a new string
     })
   );
@@ -31,8 +34,9 @@ export async function activate(context: vscode.ExtensionContext) {
   const openTextDoc = vscode.workspace.onDidOpenTextDocument((textDocument) => {
     // check file
     const path = textDocument.uri.path;
-    const fileName = textDocument.fileName;
+    const fileName = textDocument.fileName.split("/").pop() || "";
     const languageId = textDocument.languageId;
+
     if (!path.includes("/src/routes/")) {
       console.log(fileName, "is not in routes folder");
       return;
@@ -50,6 +54,10 @@ export async function activate(context: vscode.ExtensionContext) {
     // Find tab and change label
     vscode.window.tabGroups.all.forEach((groups) =>
       groups.tabs.forEach((tab) => {
+        console.log(`(2 activated with tab label: ${tab.label})`);
+        // console.log({ ...tab });
+        // tab.label = "asddsa"; // <- READONLY
+
         if (tab.label === fileName) {
           // Need: ability to override the tab label with a new string
         }
