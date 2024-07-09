@@ -6,7 +6,7 @@ UPDATE: 09/07/2024
 
 VSCode now supports [custom tab labels](https://code.visualstudio.com/updates/v1_91)!
 
-See #2 for more info.
+See [#2](https://github.com/plasmatech8/vscode-better-sveltekit-tab-labels/issues/2) for more info.
 
 -------
 
