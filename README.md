@@ -6,46 +6,7 @@ UPDATE: 09/07/2024
 
 VSCode now supports [custom tab labels](https://code.visualstudio.com/updates/v1_91)!
 
-We no longer need to put up with `+page.svelte`, `+server.ts` all over our editor tabs anymore.
-
-For example, we can define config in our `settings.json` like below:
-
-```json5
-{
-  // ...
-  "workbench.editor.customLabels.patterns": {
-    // Page
-    "**/routes/**/*/+page.svelte": "${dirname} - Page",
-    "**/routes/+page.svelte": "(root) - Page",
-    // Layout
-    "**/routes/**/*/+layout.svelte": "${dirname} - Layout",
-    "**/routes/+layout.svelte": "(root) - Layout",
-    // Page Data
-    "**/routes/**/*/+page.[tj]s": "${dirname} - Page Data",
-    "**/routes/+page.[tj]s": "(root) - Page Data",
-    // Layout Data
-    "**/routes/**/*/+layout.[tj]s": "${dirname} - Layout Data",
-    "**/routes/+layout.[tj]s": "(root) - Layout Data",
-    // Page Server Data
-    "**/routes/**/*/+page.server.[tj]s": "${dirname} - Page Server Data",
-    "**/routes/+page.server.[tj]s": "(root) - Page Server Data",
-    // Page Layout Data
-    "**/routes/**/*/+layout.server.[tj]s": "${dirname} - Layout Server Data",
-    "**/routes/+layout.server.[tj]s": "(root) - Layout Server Data",
-    // Error Page
-    "**/routes/**/*/+error.svelte": "${dirname} - Error Page",
-    "**/routes/+error.svelte": "(root) - Error Page",
-    // Server Endpoint
-    "**/routes/**/*/+server.[tj]s": "${dirname} - Server Endpoint"
-  }
-}
-```
-
-And get a result like:
-
-![image](https://github.com/plasmatech8/vscode-better-sveltekit-tab-labels/assets/40431112/3c8c73d3-48db-44df-9fce-352d760db75b)
-
-More info on customization [here](https://code.visualstudio.com/docs/getstarted/userinterface#_customize-tab-labels)
+See #2 for more info.
 
 -------
 
